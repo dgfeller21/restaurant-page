@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+html, body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Josefin Sans';
+}
+header {
+    background-color: lightgreen;
+    height: 100px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+button {
+    font-family: 'Josefin Sans';
+    width: 120px;
+    font-size: 1.5rem;
+    border-style: none;
+    background-color: lightgreen;
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+#menu {
+    border-left-style: solid;
+    border-right-style: solid;
+}
+#content {
+    flex: 1;
+    position: relative;
+}
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('./assets/background_pizza.png');
+}
+.menu-background-image {
+    margin: -50px;
+}
+.menu-content {
+    display: flex;
+}
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 50px;
+
+}
+.menu1-img {
+    background-image: url('./assets/pepperoni_pizza.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.menu2-img {
+    background-image: url('./assets/supreme_pizza.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.menu3-img {
+    background-image: url('./assets/pineapple_pizza.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.img-text {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+}
+.card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
